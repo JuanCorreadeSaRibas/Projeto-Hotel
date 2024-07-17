@@ -41,8 +41,6 @@ nav {
     display: flex;
     gap: 15px;
     font-size: 1.15rem;
-
-
 }
 
 .nav-links-visible {
@@ -183,7 +181,6 @@ section, .about {
 
     nav{
         flex-direction: column;
-        transform: matrix();
     }
 
     .menu-icon {
