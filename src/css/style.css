@@ -1,10 +1,9 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* Cores derivadas de pixels mais frequentes da imagem */
 :root {
     --cor-1: #302520;
     --cor-2: #6a7791;
@@ -41,14 +40,21 @@ nav {
     display: flex;
     gap: 15px;
     font-size: 1.15rem;
+    flex-flow: column; /* Adicione esta linha para garantir que os links estejam em coluna no mobile */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
 
 .nav-links-visible {
-    display: flex !important;
+    opacity: 1;
+    max-height: 500px; /* Ajuste conforme necessário */
 }
 
 .menu-icon {
     display: none;
+    cursor: pointer; /* Adicione isso para tornar o ícone clicável */
 }
 
 a {
@@ -163,6 +169,13 @@ section, .about {
 }
 
 @media (min-width: 768px) {
+    .nav-links {
+        display: flex !important;
+        flex-flow: row;
+        opacity: 1;
+        max-height: none;
+    }
+
     .img-g {
         height: 500px;
     }
@@ -179,22 +192,12 @@ section, .about {
 
 @media (max-width: 768px) {
 
-    nav{
+    nav {
         flex-direction: column;
     }
 
     .menu-icon {
-        padding-top: 5px;
         display: flex;
-        align-items: center;
-        cursor: pointer;
-
-        font-size: 2em;
-    }
-
-    .nav-links {
-        display: none;
-        flex-flow: column;
     }
 
     h1 {
