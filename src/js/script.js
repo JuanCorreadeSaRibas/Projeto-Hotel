@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    let header = document.querySelector('header')
+    window.document.addEventListener('scroll', () => {
+        header.style.position = 'fixed'
+        header.style.zIndex = 1
+        
+    })
+
     // Menu clicável
     let navLinks = document.querySelector('.nav-links');
     let menuIcon = document.querySelector('.menu-icon');
@@ -20,4 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
     elements.forEach(element => {
         observer.observe(element);
     });
+
 });

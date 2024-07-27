@@ -27,25 +27,7 @@
             </div>
         </nav>
     </header>
-    <!--
-    Claro! Aqui estão algumas fontes que podem ser ótimas para um site de hotel:
 
-    Lora – Uma fonte serifada elegante e legível, ótima para dar um toque clássico e sofisticado ao seu site.
-
-    Playfair Display – Outra fonte serifada, com um estilo mais moderno, ideal para títulos e elementos de destaque.
-
-    Montserrat – Uma fonte sans-serif moderna e limpa, perfeita para textos e navegação.
-
-    Raleway – Fonte sans-serif elegante que combina bem com outros estilos de fontes.
-
-    Open Sans – Uma fonte sans-serif legível e versátil, adequada para textos longos e descrições.
-
-    Poppins – Fonte sans-serif com um toque contemporâneo, boa para criar uma sensação de modernidade e clareza.
-
-    Merriweather – Serifada, é excelente para melhorar a legibilidade em textos longos e criar uma sensação de confiança e profissionalismo.
-
-Você pode encontrar essas fontes no Google Fonts, que é uma ótima plataforma para incorporar fontes de forma fácil e rápida no seu site.
-    -->
     <main>
         <section class="img-g">
             <div class="item animate">
@@ -77,7 +59,7 @@ Você pode encontrar essas fontes no Google Fonts, que é uma ótima plataforma 
 
         <section class="location" id="localizacao">
             <div class="location-text animate">
-                <h2><i class="fas fa-map-location-dot"></i> Localização Privilegiada</h2>
+                <h2><i class="fas fa-map-location-dot mapIcon"></i> Localização Privilegiada</h2>
                 <p>Situado em uma localização privilegiada, o Hotel Paraíso das Águas está próximo das principais atrações turísticas, centros de compras e áreas de negócios da cidade, proporcionando facilidade de acesso para todos os hóspedes.</p>      
             </div>
             <div class="map">
@@ -86,13 +68,43 @@ Você pode encontrar essas fontes no Google Fonts, que é uma ótima plataforma 
         </section>
 
         <section id="reserve">
+            <div>
+                <h2>Reserve agora!</h2>
+                <h3>Gostou do que viu?</h3>
+            </div>
             <div id="formplace">
-                <div>
-                    Adicionar um formulário atrativo para que seja possível à realização da reserva do cliente...
-                </div>
+                <form action="">
+                    <fieldset disabled="disabled">
+                        <div class="form-name">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div class="form-email">
+                            <label for="phone">Email</label>
+                            <input type="tel" name="phone" id="phone" autocomplete="tel">
+                        </div>
+                        <div class="form-amount">
+                            <label for="amount">Número de pessoas</label>
+                            <input type="number" name="amount" id="amount" min="1">
+                        </div>
+                        <div class="form-check-in">
+                            <label for="check-in">Check-in</label>
+                            <input type="date" name="check-in" id="check-in">
+                        </div>
+                        <div class="form-check-out">
+                            <label for="check-out">Check-out</label>
+                            <input type="date" name="check-out" id="check-out">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </main>
+
+    <footer>
+        Footer aqui
+    </footer>
 
     <script src="src/js/script.js"></script>
 </body>
