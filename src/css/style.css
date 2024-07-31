@@ -38,7 +38,7 @@ nav {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
 }
 
 .nav-links {
@@ -181,6 +181,81 @@ section, .about {
     height: 400px;
 }
 
+section#reserve{
+    width: 100%;
+    padding: 20px;
+    background-color: #c8c7d6;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.reserve-title-div h2{
+    font-size: 2em;
+    color: #514c53;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.548);
+    border-radius: 5px;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.178);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+fieldset{
+    display: flex;
+    flex-flow: row wrap;
+    border: none;
+    padding: 5px;
+    width: 100%;
+}
+
+
+.form-item{
+    flex: 1 1 calc(50% - 40px);
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: rgb(34, 34, 34);
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"],input[type="date"],input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+input[type="submit"]{
+    background-color: var(--cor-5);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    padding: 10px 15px;
+    margin-top: 15px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     .nav-links {
         display: flex !important;
@@ -225,6 +300,15 @@ section, .about {
 
     .responsive-iframe {
         height: 300px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-item {
+        flex: 1 1 100%;
     }
 }
 

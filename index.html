@@ -69,30 +69,34 @@
         </section>
 
         <section id="reserve">
-            <div>
-                <h2>Reserve agora!</h2>
-                <h3>Gostou do que viu?</h3>
+            <div class="reserve-title-div">
+                <h2>Gostou do que viu?</h2>
+                <h3>Reserve agora!</h3>
             </div>
             <div id="formplace">
                 <form action="">
-                    <fieldset disabled="disabled">
-                        <div class="form-name">
+                    <fieldset>
+                        <div class="form-item">
                             <label for="nome">Nome</label>
                             <input type="text" name="nome" id="nome">
                         </div>
-                        <div class="form-email">
-                            <label for="phone">Email</label>
+                        <div class="form-item">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" autocomplete="email">
+                        </div>
+                        <div class="form-item">
+                            <label for="phone">Telefone</label>
                             <input type="tel" name="phone" id="phone" autocomplete="tel">
                         </div>
-                        <div class="form-amount">
+                        <div class="form-item">
                             <label for="amount">Número de pessoas</label>
                             <input type="number" name="amount" id="amount" min="1">
                         </div>
-                        <div class="form-check-in">
+                        <div class="form-item">
                             <label for="check-in">Check-in</label>
                             <input type="date" name="check-in" id="check-in">
                         </div>
-                        <div class="form-check-out">
+                        <div class="form-item">
                             <label for="check-out">Check-out</label>
                             <input type="date" name="check-out" id="check-out">
                             <input type="submit" value="Enviar">
