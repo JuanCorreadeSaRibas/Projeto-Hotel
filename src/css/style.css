@@ -121,7 +121,7 @@ section, .about {
     flex-direction: column-reverse;
 }
 
-.about-text {
+.about-text, .reserve-title-div {
     max-width: 600px;
     padding: 10px;
 }

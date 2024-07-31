@@ -78,27 +78,27 @@
                     <fieldset>
                         <div class="form-item">
                             <label for="nome">Nome</label>
-                            <input type="text" name="nome" id="nome">
+                            <input type="text" name="nome" id="nome" autocomplete="name"  required>
                         </div>
                         <div class="form-item">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" autocomplete="email">
+                            <input type="email" name="email" id="email" autocomplete="email" required>
                         </div>
                         <div class="form-item">
                             <label for="phone">Telefone</label>
-                            <input type="tel" name="phone" id="phone" autocomplete="tel">
+                            <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="(DDD) xxxx-xxxx" required>
                         </div>
                         <div class="form-item">
                             <label for="amount">Número de pessoas</label>
-                            <input type="number" name="amount" id="amount" min="1">
+                            <input type="number" name="amount" id="amount" min="1" value="1" required>
                         </div>
                         <div class="form-item">
                             <label for="check-in">Check-in</label>
-                            <input type="date" name="check-in" id="check-in">
+                            <input type="date" name="check-in" id="check-in" required>
                         </div>
                         <div class="form-item">
                             <label for="check-out">Check-out</label>
-                            <input type="date" name="check-out" id="check-out">
+                            <input type="date" name="check-out" id="check-out" required>
                             <input type="submit" value="Enviar">
                         </div>
                     </fieldset>
