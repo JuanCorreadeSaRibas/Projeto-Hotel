@@ -36,30 +36,53 @@
                 <p>A combinação perfeita de luxo e hospitalidade em um só lugar.</p>
             </div>
         </section>
-        
+        <section id="reserve">
+            <div class="rooms">
+                <div class="reserve-title-div">
+                    <h2>Quartos & Taxas <i class="fas fa-check-circle"></i></h2>
+                </div>
+                <div>
+                    <label for="amount">Número de pessoas</label>
+                    <select name="amount" id="amount">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    
+                </div>
+
+                <div>
+                    <label for="check-in">Check-in</label>
+                    <input type="date" name="check-in" id="check-in" required>
+                </div>
+                <div>
+    
+                    <label for="check-out">Check-out</label>
+                    <input type="date" name="check-out" id="check-out" required>
+                </div>
+
+            </div> 
+            
+        </section>
         <section class="about" id="sobre">
             <div class="about-item">
                 <div class="about-text animate">
-                    <h2>Nossas Acomodações</h2>
-                    <p>Com quartos elegantemente decorados e equipados com as mais modernas comodidades, garantimos uma experiência de hospedagem única. Cada detalhe é pensado para seu máximo conforto, desde as camas king size até o serviço de quarto 24 horas.</p>      
+                    <h1>Sobre o Hotel</h1>
+                    <p>Descubra o Paraíso das Águas, um refúgio perfeito para relaxar e renovar suas energias. Desfrute de acomodações confortáveis, vistas deslumbrantes e um atendimento impecável. Seja para uma escapada romântica ou férias em família, aqui você encontrará a tranquilidade e o conforto que merece. Reserve já! lor</p>      
                 </div>
                 <div class="about-img">
-                    <img src="src/imagens/room-large.jpg" alt="Quarto do Hotel">
+                    <img src="src/imagens/pexels-asman-chema-91897-594077.jpg" alt="Quarto do Hotel">
                 </div>
             </div>
             <div class="about-item">
-                <div class="about-text animate">
-                    <h2>Lazer e Bem-Estar</h2>
-                    <p>Relaxe e recarregue as energias em nosso spa de luxo, que oferece uma variedade de tratamentos terapêuticos. Aproveite também nossa academia equipada com os mais modernos aparelhos e a piscina ao ar livre, ideal para um mergulho refrescante.</p>      
-                </div>
-                <div class="about-img ">
-                    <img src="src/imagens/pool-medium.jpg" alt="Piscina do Hotel">
-                </div>
+                
             </div>
         </section>
-
+        
         <section class="location" id="localizacao">
-            <div class="location-text animate">
+            <div class="location-text">
                 <h2><i class="fas fa-map-location-dot "></i> Localização Privilegiada</h2>
                 <p>Situado em uma localização privilegiada, o Hotel Paraíso das Águas está próximo das principais atrações turísticas, centros de compras e áreas de negócios da cidade, proporcionando facilidade de acesso para todos os hóspedes.</p>      
             </div>
@@ -67,11 +90,11 @@
                 <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.7950408323463!2d-32.44669332639237!3d-3.8541193438217456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6364dff104530a3%3A0x258f9c83f7471d2!2sPraia%20do%20Sancho!5e0!3m2!1spt-BR!2sbr!4v1721008380266!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>  
         </section>
-
-        <section id="reserve">
+        
+        <section id="contato">
             <div class="reserve-title-div">
-                <h2>Gostou do que viu?</h2>
-                <h3>Reserve agora!</h3>
+                <h2>Entre em contato</h2>
+                <h3>informe-se conosco</h3>
             </div>
             <div id="formplace">
                 <form action="">
@@ -87,53 +110,60 @@
                         <div class="form-item">
                             <label for="phone">Telefone</label>
                             <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="(DDD) xxxx-xxxx" required>
+                        </div>               
+                        <div class="form-item">
+                            <label for="assunto">assunto</label>
+                            <input type="text" id="assunto">
                         </div>
                         <div class="form-item">
-                            <label for="amount">Número de pessoas</label>
-                            <input type="number" name="amount" id="amount" min="1" value="1" required>
-                        </div>
-                        <div class="form-item">
-                            <label for="check-in">Check-in</label>
-                            <input type="date" name="check-in" id="check-in" required>
-                        </div>
-                        <div class="form-item">
-                            <label for="check-out">Check-out</label>
-                            <input type="date" name="check-out" id="check-out" required>
+                            <label for="textmsg">Digite sua mensagem aqui</label>
+                            <textarea name="textmsg" id="textmsg"></textarea>
                             <input type="submit" value="Enviar">
                         </div>
+                        
                     </fieldset>
                 </form>
             </div>
         </section>
     </main>
-
+    
     <footer>
-        <div>
-            <img src="src/imagens/logo_favicon_no_bg_circled.png" alt="" width="250">
-            <h2>Hotel Paraíso das Águas</h2>
+        <div class="footer-item">
+            <div class="footer-logo">
+                <h2>Hotel Paraíso das Águas</h2>
+                <img src="src/imagens/logo_favicon_no_bg_circled.png" alt="" width="200">
+                <p class="tagline">Your Oasis of Relaxation</p> <!-- Added tagline -->
+            </div>
+
         </div>
-        <div>
-            <h2>Contato</h2>
-            <ul>
-                <li>(41) 3450-0601</li>
-                <li>contato@hotelpda.com.br</li>
-                <li>suporte@hotelpda.com.br</li>
-                <li>Rua São Celestino N 95</li>
-            </ul>
+        <div class="footer-item">
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> (41) 3450-0601</li> <!-- Added icon -->
+                    <li><i class="fa-solid fa-envelope"></i> contato@hotelpda.com.br</li> <!-- Added icon -->
+                    <li><i class="fa-solid fa-envelope"></i> suporte@hotelpda.com.br</li> <!-- Added icon -->
+                    <li><i class="fa-solid fa-location-dot"></i> Rua São Celestino N 95</li> <!-- Added icon -->
+                    <li><i class="fa-brands fa-whatsapp"></i> WhatsApp: (41) 91234-5678</li> <!-- Added WhatsApp -->
+                </ul>
+                <p class="operating-hours"><i class="fa-solid fa-clock"></i> Operating Hours: Mon-Sun, 8 AM - 10 PM</p> <!-- Added operating hours -->
+            </div>
         </div>
-        <div>
+        <div class="footer-item">
+            <h3>Follow us</h3>
             <ul class="social-media">
-                <li><i class="fa-brands fa-instagram"><a href="#"></a></i></li>
-                <li><i class="fa-brands fa-facebook-f"><a href="#"></a></i></li>
-                <li><i class="fa-brands fa-x-twitter"><a href="#"></a></i></li>
-                <li><i class="fa-brands fa-linkedin-in"><a href="#"></a></i></li>
-                <li><i class="fa-brands fa-threads"><a href="#"></a></i></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-threads"></i></a></li>
             </ul>
-
-            <small>&copy; Feito por <a href="https://juancorreadesaribas.github.io/" target="_blank" rel=" noopener author">Juan Correa</a></small>
+            <a href="#" class="newsletter-signup">Sign up for our newsletter</a> <!-- Added newsletter signup -->
+            <a href="#" class="special-offers">Check out our special offers!</a> <!-- Added special offers link -->
         </div>
+        <small>&copy; Todos os direitos reservados <br> Desenvolvido por <a href="https://juancorreadesaribas.github.io/" target="_blank" rel="noopener author">Juan Correa de Sá Ribas</a>  </small>
     </footer>
-
+    
     <script src="src/js/script.js"></script>
 </body>
 </html>

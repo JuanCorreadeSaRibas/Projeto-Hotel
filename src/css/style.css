@@ -42,13 +42,28 @@ body {
 
 header {
     width: 100%;
-    background-image: linear-gradient(120deg, #c68863, #db7c7c);
+    background-image: linear-gradient(90deg, #c68863, #db7c7c);
+    background-size: 300% 300%;
     color: #e2e2e2;
     top: 0;
     left: 0;
     box-shadow: 5px 0px 4px rgba(201, 201, 201, 0.865);
+    animation: bg-color 5s ease infinite;
 }
 
+@keyframes bg-color {
+    0%{
+        background-position: 50% 0%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 50% 0%;
+    }
+}
 
 nav {
     display: flex;
@@ -119,7 +134,8 @@ a:hover{
     box-shadow: inset 0px -10px 5px rgba(0, 0, 0, 0.13);
 }
 
-.img-g .slogan {
+.img-g > .slogan {
+    font-family: var(--font1);
     color: rgb(255, 255, 255);
     text-shadow: 2px -2px rgba(95, 95, 95, 0.267);
     padding: 30px;
@@ -130,6 +146,7 @@ a:hover{
 .img-g .slogan h2{
     text-align: center;
 }
+
 
 section, .about {
     width: 100%;
@@ -155,6 +172,37 @@ section, .about {
 .about-text, .reserve-title-div {
     max-width: 600px;
     padding: 10px;
+    font-size: 1.3em;
+}
+
+section#reserve{
+    background-color: #1c1c1c;
+    padding: 20px;
+}
+
+.rooms{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.rooms label, .rooms h2{
+    color: white;
+    text-align: center;
+}
+
+
+.rooms div{
+    display: flex;
+    flex-direction: column;
+}
+
+.rooms label, .rooms select, .rooms input{
+    flex: auto;
+    
 }
 
 .animate {
@@ -165,7 +213,7 @@ section, .about {
 
 .animate.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(1);
 }
 
 .about-img {
@@ -204,6 +252,7 @@ section, .about {
 .location-text p {
     color: white;
     text-align: justify;
+    font-size: 1.2em;
     padding: 10px;
 }
 
@@ -213,7 +262,7 @@ section, .about {
     height: 400px;
 }
 
-section#reserve{
+section#contato{
     width: 100%;
     padding: 20px;
     background-color: #c8c7d6;
@@ -224,10 +273,6 @@ section#reserve{
     text-align: justify;
 }
 
-.reserve-title-div h2{
-    font-size: 2em;
-    color: #514c53;
-}
 
 form{
     background-color: rgba(255, 255, 255, 0.548);
@@ -263,7 +308,7 @@ label{
     margin-bottom: 5px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"],input[type="date"],input[type="number"] {
+input[type="text"], input[type="email"], input[type="tel"],input[type="date"],input[type="number"], textarea, select{
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -271,8 +316,11 @@ input[type="text"], input[type="email"], input[type="tel"],input[type="date"],in
     border-radius: 4px;
 }
 
+
+
 textarea {
     resize: vertical;
+
 }
 
 
@@ -288,24 +336,128 @@ input[type="submit"]{
     cursor: pointer;
 }
 
-footer{
-    padding: 10px;
+footer {
+    padding: 30px;
     background-color: #1c1c1c;
-    color: aliceblue;
+    color: rgb(193, 194, 195);
     display: flex;
     flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: space-evenly;
-}
-
-.social-media{
-    font-family: var(--font2);
-    list-style-type: none;
-    display: flex;
     justify-content: space-around;
-    padding: 5px;
+    align-items: flex-start;
 }
 
+/* Footer Item Styles */
+.footer-item {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Logo and Contact Section */
+.footer-logo img {
+    display: flex;
+    margin: 30px;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.tagline {
+    color: #a0522d;
+    font-style: italic;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-contact ul li {
+    margin-bottom: 5px;
+}
+
+.footer-contact ul li i {
+    margin-right: 8px;
+    color: #a0522d;
+}
+
+.operating-hours {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #a0522d;
+}
+
+.operating-hours i {
+    margin-right: 5px;
+}
+
+/* Social Media Links */
+.social-media {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.social-media a {
+    color: rgb(193, 194, 195);
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #a0522d; /* Hover color */
+}
+
+/* Newsletter Signup and Special Offers */
+.newsletter-signup, .special-offers {
+    display: block;
+    color: #a0522d;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.newsletter-signup:hover, .special-offers:hover {
+    text-decoration: underline;
+}
+
+/* Attribution */
+footer small {
+    color: rgb(193, 194, 195);
+    justify-self: center;
+    align-self: flex-end;
+    text-align: center;
+    width: 100%;
+}
+
+footer small a {
+    color: #a0522d;
+    text-decoration: none;
+}
+
+footer small a:hover {
+    text-decoration: underline;
+}
+
+/*  Media Queries */
 @media (min-width: 768px) {
     .nav-links {
         display: flex !important;
@@ -313,7 +465,6 @@ footer{
         opacity: 1;
         max-height: none;
     }
-
 
     .img-g {
         align-items: center;
@@ -331,10 +482,11 @@ footer{
     .about-item:nth-child(even) {
         flex-direction: row-reverse;
     }
+
+    
 }
 
 @media (max-width: 768px) {
-
     nav {
         flex-direction: column;
     }
@@ -364,6 +516,37 @@ footer{
 
     .form-item {
         flex: 1 1 100%;
+    }
+
+    .rooms {
+        flex-direction: column; /* Stack items on top of each other */
+    }
+
+    .rooms div h2{
+        font-size: 2em;
+    }
+
+    .rooms select, .rooms input[type="date"], .rooms input[type="submit"] {
+        width: 100%; /* Full width for small screens */
+        margin-bottom: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-contact, .social-media {
+        align-items: center;
+    }
+
+    .social-media {
+        justify-content: center;
     }
 }
 
