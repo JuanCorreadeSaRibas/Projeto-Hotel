@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     // Menu clicável
-    let navLinks = document.querySelector('.nav-links');
-    let menuIcon = document.querySelector('.menu-icon');
 
-    menuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('nav-links-visible');
+    
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
     });
+    
 
     // Efeito opacidade
     const observer = new IntersectionObserver(entries => {
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const elements = document.querySelectorAll('.animate');
-    elements.forEach(element => {
+    const animate = document.querySelectorAll('.animate');
+    animate.forEach(element => {
         observer.observe(element);
     });
 
