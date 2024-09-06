@@ -101,8 +101,7 @@ nav {
 }
 
 .active {
-    opacity: 1;
-    max-height: 500px; 
+    opacity: 1; 
 }
 
 .menu-icon {
