@@ -547,6 +547,10 @@ footer small a:hover {
 /* Media Queries - Dispositivos móveis */
 @media (max-width: 768px) {
 
+    .img-g{
+        background-position: top top;
+    }
+
     nav {
         justify-content: space-between;
         align-items: center;
@@ -657,12 +661,19 @@ footer small a:hover {
     }
 
     footer {
-        flex-direction: column;
-        padding: 10px;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
     }
-
-    .footer-item {
-        flex: none;
+    
+    .footer-item{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-contact{
         text-align: center;
     }
 
