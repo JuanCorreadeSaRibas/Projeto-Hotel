@@ -190,7 +190,6 @@ section, .about {
 
 section#reserve{
     background-color: #1c1c1c;
-    padding: 20px;
 }
 
 .rooms{
@@ -479,7 +478,7 @@ footer small a:hover {
         flex-direction: row;
         font-size: 1.2rem;
         opacity: 1;
-        max-height: none;
+        
     }
 
     .menu-icon {
@@ -507,16 +506,18 @@ footer small a:hover {
     }
 
     .rooms {
-        flex-direction: row;
+        flex-flow: row wrap;
         justify-content: space-around;
     }
 
-    .rooms label, .rooms h2 {
-        font-size: 1.4em;
+    .rooms div, .rooms label, .rooms h2 {
+        text-align: center;
+        font-size: 1.1em;
+        flex: auto;
     }
 
     .rooms select, .rooms input[type="date"], .rooms input[type="submit"] {
-        width: 80%; /* Aumentar a largura dos inputs no tablet */
+        width: 100%; /* Aumentar a largura dos inputs no tablet */
     }
 
     .location-text h2 {
@@ -634,11 +635,13 @@ footer small a:hover {
     }
 
     .rooms label, .rooms h2 {
-        font-size: 1.2em;
+        text-align: center;
+        font-size: 1.5em;
     }
 
-    .rooms select, .rooms input[type="date"], .rooms input[type="submit"] {
-        width: 100%;
+    .rooms label, .rooms select, .rooms input[type="date"], .rooms input[type="submit"] {
+        flex: auto;
+        width: 300px;
     }
 
     .location-text h2 {
