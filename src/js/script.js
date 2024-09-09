@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    //Cabeçalho fixo
+    //Cabeçalho fixo 
     let header = document.querySelector('header')
     window.document.addEventListener('scroll', () => {
         header.style.position = 'fixed'
-        header.style.zIndex = 1
         
     })
 

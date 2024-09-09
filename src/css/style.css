@@ -48,17 +48,20 @@
 body {
     width: 100%;
     font-family: var(--lato);
+
 }
 
 header {
     width: 100%;
     background-image: linear-gradient(90deg, #c68863, #db7c7c);
+    position: absolute;
     background-size: 300% 300%;
     color: #e2e2e2;
     top: 0;
     left: 0;
     font-family: var(--mont);
     box-shadow: 5px 0px 4px rgba(201, 201, 201, 0.865);
+    z-index: 1;
     animation: bg-color 5s ease infinite;
 
 }
@@ -471,7 +474,7 @@ footer small a:hover {
 }
 
 /* Media Queries - Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px){
     
     .nav-links {
         display: flex;
@@ -565,15 +568,13 @@ footer small a:hover {
     }
 
     .nav-links {
-        display: flex; /* Mudei para 'flex' para controle de layout */
+        display: none;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        position: absolute;
         top: 0;
         right: -100%; /* Posicionado fora da tela inicialmente */
         height: 100dvh;
-        width: 70%; /* Menu ocupa 70% da largura da tela */
         background-color: rgba(47, 52, 54, 0.8); /* Cor de fundo com transparência */
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque de fundo */
@@ -582,37 +583,40 @@ footer small a:hover {
         gap: 30px; /* Espaçamento entre os itens do menu */
         box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
         transform: translateX(100%); /* Move o menu para fora da tela à direita */
-        transition: transform 0.5s ease-out, background-color 0.3s ease; /* Transição suave */
+
     }
     
     .active{
+        display: flex;
         position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         background-color: #2f34365c;
-        background-size: 300% 300%;
         top: 100%;
         right: 0;
         height: 100dvh;
         width: 100%;
         padding: 100px;
         font-size: 1.1em;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
         gap: 50px;
         transform: translateX(0);
 
     }
+
+
     
     .nav-links a {
         color: white;
         text-decoration: none;
         font-weight: bold;
+        font-style: normal;
         transition: color 0.3s ease;
     }
     
     .nav-links a:hover {
-        color: var(--cor-3); /* Cor de destaque no hover */
+        font-style: oblique;
+        color: rgb(236, 233, 214); /* Cor de destaque no hover */
     }
 
     .img-g {
