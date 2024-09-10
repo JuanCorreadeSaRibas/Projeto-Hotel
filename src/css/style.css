@@ -168,10 +168,11 @@ section, .about {
 
 .about-item {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    border: 1px solid rebeccapurple;
 }
 
 .about-item:nth-child(even) {
@@ -187,6 +188,21 @@ section, .about {
     max-width: 600px;
     padding: 10px;
     font-size: 1.3em;
+}
+
+.about-img {
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+}
+
+.about-img img {
+    flex: auto;
+    width: 100%;
+    max-height: 560px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 2px 4px rgba(30, 30, 32, 0.288);
 }
 
 
@@ -217,7 +233,6 @@ section#reserve{
 
 .rooms label, .rooms select, .rooms input{
     flex: auto;
-    
 }
 
 .animate {
@@ -231,18 +246,7 @@ section#reserve{
     transform: translateY(1);
 }
 
-.about-img {
-    max-width: 600px;
-    padding: 10px;
-}
 
-.about-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 3px 2px 4px rgba(30, 30, 32, 0.288);
-}
 
 .location {
     background-color: #4a342c;
@@ -495,13 +499,9 @@ footer small a:hover {
     }
 
     .about-item {
-        flex-direction: row;
         justify-content: space-between;
     }
 
-    .about-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
 
     .about-text, .reserve-title-div {
         font-size: 1.2em;

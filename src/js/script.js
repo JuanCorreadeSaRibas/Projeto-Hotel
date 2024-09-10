@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.querySelector('.menu-icon').addEventListener('click', function() {
         document.querySelector('.nav-links').classList.toggle('active');
+        document.querySelector('body').style.overflowY = "hidden"
     });
     
 
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    //efeito animate
     const animate = document.querySelectorAll('.animate');
     animate.forEach(element => {
         observer.observe(element);
