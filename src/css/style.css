@@ -103,6 +103,7 @@ nav {
     transition: all 0.5s ease-in-out;
 }
 
+
 .active {
     opacity: 1;
  
@@ -605,7 +606,6 @@ footer small a:hover {
     }
 
 
-    
     .nav-links a {
         color: white;
         text-decoration: none;
@@ -614,10 +614,12 @@ footer small a:hover {
         transition: color 0.3s ease;
     }
     
-    .nav-links a:hover {
+    .nav-links a:hover, .nav-links a:focus{
         font-style: oblique;
-        color: rgb(236, 233, 214); /* Cor de destaque no hover */
+        color: rgb(236, 233, 214); 
+
     }
+    
 
     .img-g {
         align-items: center;
