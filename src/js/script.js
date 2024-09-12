@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active')
 
         if(navLinks.classList.contains('active')){
-            document.body.style.overflow = 'hidden'
+            document.body.style.overflowY = 'hidden'
         } else{
-            document.body.style.overflow = 'auto'
+            document.body.style.overflowY = 'scroll'
         }
     })
     
