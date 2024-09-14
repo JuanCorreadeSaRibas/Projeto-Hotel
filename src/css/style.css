@@ -173,7 +173,7 @@ section, .about {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    border: 1px solid rebeccapurple;
+
 }
 
 .about-item:nth-child(even) {
@@ -500,13 +500,13 @@ footer small a:hover {
     }
 
     .about-item {
-        justify-content: space-between;
+        flex-flow: row;
+        justify-content: space-evenly;
     }
-
 
     .about-text, .reserve-title-div {
         font-size: 1.2em;
-        max-width: 800px;
+        max-width: 50%;
     }
 
     .rooms {
@@ -525,7 +525,7 @@ footer small a:hover {
     }
 
     .location-text h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .location-text p {
