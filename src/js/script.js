@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    //Cabeçalho fixo 
     let header = document.querySelector('header')
     window.document.addEventListener('scroll', () => {
         header.style.position = 'fixed'
-        
     })
 
     // Menu clicável
-
-    
+    let navLinks = document.querySelector('.nav-links')
     document.querySelector('.menu-icon').addEventListener('click', function() {
-
-        let navLinks = document.querySelector('.nav-links')
+        
         navLinks.classList.toggle('active')
 
         if(navLinks.classList.contains('active')){
@@ -37,5 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
     animate.forEach(element => {
         observer.observe(element);
     });
+
 
 });
