@@ -53,7 +53,7 @@ body {
 
 header {
     width: 100%;
-    background-image: linear-gradient(90deg, #c68863, #db7c7c);
+    background-image: linear-gradient(120deg, #c68863, #db7c7c);
     position: absolute;
     background-size: 300% 300%;
     color: #e2e2e2;
@@ -62,7 +62,7 @@ header {
     font-family: var(--mont);
     box-shadow: 5px 0px 4px rgba(201, 201, 201, 0.865);
     z-index: 1;
-    animation: bg-color 5s ease infinite;
+    animation: bg-color 10s ease infinite;
 
 }
 
@@ -157,56 +157,6 @@ a:hover{
     
 }
 
-section, .about {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-
-}
-
-.about-item {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-
-}
-
-.about-item:nth-child(even) {
-    flex-direction: column-reverse;
-}
-
-.about-text h1{
-    color: #2f3436;
-}
-
-.about-text, .reserve-title-div {
-    font-family: var(--pops);
-    max-width: 600px;
-    padding: 10px;
-    font-size: 1.3em;
-}
-
-.about-img {
-    max-width: 600px;
-    height: auto;
-    padding: 10px;
-}
-
-.about-img img {
-    flex: auto;
-    width: 100%;
-    max-height: 560px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 3px 2px 4px rgba(30, 30, 32, 0.288);
-}
-
-
 section#reserve{
     background-color: #1c1c1c;
 }
@@ -234,6 +184,98 @@ section#reserve{
 
 .rooms label, .rooms select, .rooms input{
     flex: auto;
+}
+
+section, .about {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.about-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+.about-item:nth-child(even) {
+    flex-direction: column-reverse;
+}
+
+.about-text h1, .facilities h2{
+    color: #2f3436;
+}
+
+.about-text, .reserve-title-div {
+    font-family: var(--pops);
+    max-width: 600px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.about-img {
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+}
+
+.about-img img {
+    flex: auto;
+    width: 100%;
+    max-height: 560px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 2px 4px rgba(30, 30, 32, 0.288);
+}
+
+.facilities{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.facilities h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 80px;
+}
+
+.facil-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.facil-item{
+    text-align: center;
+    width: 150px;
+}
+
+.facil-item i{
+    display: block;
+    font-size: 3rem;
+    color: var(--cor-5);
+    margin-bottom: 10px;
+    transition: all 1s ease;
+}
+
+.facil-item i:hover{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #ef9f70;
+    transition: all 0.7s ease;
+}
+
+.facil-item p{
+    font-size: 1rem;
+    color: #555;
 }
 
 .animate {
@@ -279,7 +321,7 @@ section#reserve{
 
 .responsive-iframe {
     width: 100%;
-    border-radius: 3px;
+    border-radius: 5px;
     height: 400px;
 }
 
@@ -500,7 +542,7 @@ footer small a:hover {
     }
 
     .about-item {
-        flex-flow: row;
+        flex-flow: row nowrap;
         justify-content: space-evenly;
     }
 
@@ -524,7 +566,7 @@ footer small a:hover {
         width: 100%; /* Aumentar a largura dos inputs no tablet */
     }
 
-    .location-text h2 {
+    .location-text h2, .facilities h2{
         font-size: 1.5em;
     }
 
@@ -549,7 +591,7 @@ footer small a:hover {
 }
 
 /* Media Queries - Dispositivos móveis */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .img-g{
         background-position: top top;
