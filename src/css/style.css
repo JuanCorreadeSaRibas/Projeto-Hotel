@@ -270,16 +270,21 @@ section, .about {
 }
 
 .facil-item i:hover{
-    font-size: 4rem;
+    font-size: 3.5rem;
     cursor: pointer;
     margin-bottom: 10px;
     color: #ef9f70;
     transition: all 0.7s ease;
 }
 
+
 .facil-item p{
     font-size: 1rem;
     color: #555;
+}
+
+#clicado{
+    display: block;
 }
 
 .animate {
