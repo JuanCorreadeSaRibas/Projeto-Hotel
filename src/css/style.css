@@ -277,16 +277,20 @@ section, .about {
     transition: all 0.7s ease;
 }
 
-
 .facil-item p{
     font-size: 1rem;
     color: #555;
 }
 
-#clicado{
-    display: block;
+/*.facil-item .clicado{
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    width: 34%;
+    align-items: center;
+    flex-direction: column;
 }
-
+*/
 .animate {
     opacity: 0;
     transform: translateY(20px);
@@ -431,6 +435,7 @@ footer {
 /* Logo and Contact Section */
 .footer-logo img {
     display: flex;
+    width: 165px;
     margin: 30px;
 }
 
@@ -482,6 +487,7 @@ footer {
     gap: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
+    text-align: center;
 }
 
 .social-media li {
@@ -680,11 +686,7 @@ footer small a:hover {
     .about-item {
         flex-direction: column;
     }
- /*
-   .about-item:nth-child(even) {
-        flex-direction: column;
-    }
-*/
+
     .about-text, .reserve-title-div {
         font-size: 1em;
         max-width: 100%;

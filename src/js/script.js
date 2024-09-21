@@ -39,18 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    //Facilities Icones
-
-const facilitiesContainer = document.querySelector('.facil-container');
-
-// Objeto com as descrições das facilidades
-let aboutItens = {
-    pool: 'Oferecemos uma piscina grande para dias de sol',
-    wifi: 'Nosso Wi-fi pega em todo o espaço',
-    spa: 'Todo mundo merece um Spa como esse...',
-    parking: 'Nosso estacionamento é amplo e seguro',
-    coffee: 'O nosso café da manhã é realmente divino, nem os maiores reis poderiam ter',
-    games: 'Um pouco de diversão? Por que não?'
-};
-
-
+    
+    
+});
