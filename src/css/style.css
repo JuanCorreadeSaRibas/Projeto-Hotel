@@ -282,18 +282,7 @@ section, .about {
     color: #555;
 }
 
-.facil-item .info{
-    display: none;
-}
 
-/*.facil-item .clicado{
-    display: flex;
-    align-content: flex-start;
-    justify-content: center;
-    width: 34%;
-    align-items: center;
-    flex-direction: column;
-}
 */
 .animate {
     opacity: 0;

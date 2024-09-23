@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     //Facilities Infos 
-    let facilitiesContainer = document.getElementById('facilities')
+    let facilitiesContainer = document.getElementById('facilities');
 
     let aboutItens = {
         pool: 'Oferecemos uma piscina grande para dias de sol',
@@ -48,36 +48,41 @@ document.addEventListener('DOMContentLoaded', function() {
         parking: 'O estacionamento é espaçoso e seguro para todos os veículos.',
         coffee: 'O nosso café da manhã é realmente divino, nem os maiores reis poderiam ter',
         games: 'Um pouco de diversão? Por que não?'
-    }
+    };
     
     let lastClickedElement = null;
     
     facilitiesContainer.addEventListener('click', (event) => {
         if (event.target.tagName === 'I') {
-            let facilityId = event.target.id; 
-            let parentItem = event.target.parentElement; 
-            let allItems = document.querySelectorAll('.facil-item'); 
-    
+            let facilityId = event.target.id;
+            let parentItem = event.target.parentElement;
+            let allItems = document.querySelectorAll('.facil-item');
+            
             // Verifica se o mesmo item foi clicado novamente
             if (lastClickedElement === parentItem) {
                 allItems.forEach(item => {
-                    item.style.display = 'block'; // Mostra todos os itens novamente
+                    let infoP = item.querySelector('p');
+                    if (infoP) {
+                        infoP.remove(); // Remove o parágrafo de informação ao desmarcar
+                    }
                 });
                 lastClickedElement = null; // Reseta o último item clicado
             } else {
                 allItems.forEach(item => {
-                    item.style.display = 'none'; // Oculta todos os itens
+                    let infoP = item.querySelector('p');
+                    if (infoP) {
+                        infoP.remove(); // Remove as informações dos outros itens
+                    }
                 });
                 
                 // Adiciona o texto ao item clicado
-                let existingP = parentItem.querySelector('p');
-                if (!existingP && aboutItens[facilityId]) {
+                if (aboutItens[facilityId]) {
                     let p = document.createElement('p');
                     p.innerText = aboutItens[facilityId];
+                    p.style.textAlign = 'center'
                     parentItem.appendChild(p);
                 }
                 
-                parentItem.style.display = 'block';
                 lastClickedElement = parentItem; // Define o último item clicado
             }
         }
