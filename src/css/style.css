@@ -277,9 +277,13 @@ section, .about {
     transition: all 0.7s ease;
 }
 
-.facil-item p{
+.facil-item h4, .facil-item p{
     font-size: 1rem;
     color: #555;
+}
+
+.facil-item .info{
+    display: none;
 }
 
 /*.facil-item .clicado{
