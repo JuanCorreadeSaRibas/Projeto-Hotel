@@ -152,7 +152,7 @@ a:hover{
 }
 
 .img-g > .slogan {
-    font-family: var(--well);
+    font-family: var(--pops);
     color: rgb(255, 255, 255);
     text-shadow: 2px -2px rgba(95, 95, 95, 0.267);
     padding: 30px;
