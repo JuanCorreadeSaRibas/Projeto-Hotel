@@ -266,7 +266,7 @@ section, .about {
     font-size: 3rem;
     color: var(--cor-5);
     margin-bottom: 10px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .facil-item i:hover{
@@ -274,7 +274,7 @@ section, .about {
     cursor: pointer;
     margin-bottom: 10px;
     color: #ef9f70;
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
 }
 
 .facil-item h4, .facil-item p{
@@ -283,7 +283,7 @@ section, .about {
 }
 
 
-*/
+
 .animate {
     opacity: 0;
     transform: translateY(20px);
@@ -683,6 +683,18 @@ footer small a:hover {
     .about-text, .reserve-title-div {
         font-size: 1em;
         max-width: 100%;
+    }
+
+    .facil-item {
+        width: 100px; /* Reduzi o tamanho dos itens para melhor ajuste */
+    }
+
+    .facil-item i {
+        font-size: 2.5rem;
+    }
+
+    .facil-item i:hover {
+        font-size: 3rem;
     }
 
     .rooms {

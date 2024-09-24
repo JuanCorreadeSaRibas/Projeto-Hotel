@@ -54,7 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    //Facilities Infos 
+    //Facilities Infos Ideia mei ruim e mau executada
+    /*
     let facilitiesContainer = document.getElementById('facilities');
 
     let aboutItens = {
@@ -102,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 lastClickedElement = parentItem; // Define o último item clicado
             }
         }
-    });
-    
+    });*/
+   
     
 });
