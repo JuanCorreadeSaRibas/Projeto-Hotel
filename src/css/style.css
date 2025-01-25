@@ -56,7 +56,7 @@ body {
 
 header {
     width: 100%;
-    background-image: linear-gradient(120deg, #c68863, #db7c7c);
+    background-image: linear-gradient(90deg, #c68863, #db7c7c);
     position: absolute;
     background-size: 300% 300%;
     color: #e2e2e2;
@@ -65,7 +65,7 @@ header {
     font-family: var(--mont);
     box-shadow: 5px 0px 4px rgba(201, 201, 201, 0.865);
     z-index: 1;
-    animation: bg-color 10s ease infinite;
+    animation: bg-color 5s ease infinite;
 
 }
 
@@ -165,7 +165,8 @@ section#reserve{
 }
 
 .rooms{
-    width: 100%;
+    max-width: 100%;
+    background-color: #2f3436ef;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -342,6 +343,18 @@ section#contato{
     text-align: justify;
 }
 
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.alert p {
+    margin: 0;
+}
 
 form{
     background-color: rgba(255, 255, 255, 0.548);
@@ -377,15 +390,13 @@ label{
     margin-bottom: 5px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"],input[type="date"],input[type="number"], textarea, select{
+input, input[type="email"], input[type="tel"],input[type="date"],input[type="number"], textarea, select{
     width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
-
 
 textarea {
     resize: vertical;

@@ -54,56 +54,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    //Facilities Infos Ideia mei ruim e mau executada
-    /*
-    let facilitiesContainer = document.getElementById('facilities');
+    //Phone placeholder
+    const phoneInput = document.getElementById('phone');
 
-    let aboutItens = {
-        pool: 'Oferecemos uma piscina grande para dias de sol',
-        wifi: 'Nosso Wi-fi pega em todo o espaço',
-        spa: 'Todo mundo merece um Spa como esse...',
-        parking: 'O estacionamento é espaçoso e seguro para todos os veículos.',
-        coffee: 'O nosso café da manhã é realmente divino, nem os maiores reis poderiam ter',
-        games: 'Um pouco de diversão? Por que não?'
-    };
-    
-    let lastClickedElement = null;
-    
-    facilitiesContainer.addEventListener('click', (event) => {
-        if (event.target.tagName === 'I') {
-            let facilityId = event.target.id;
-            let parentItem = event.target.parentElement;
-            let allItems = document.querySelectorAll('.facil-item');
-            
-            // Verifica se o mesmo item foi clicado novamente
-            if (lastClickedElement === parentItem) {
-                allItems.forEach(item => {
-                    let infoP = item.querySelector('p');
-                    if (infoP) {
-                        infoP.remove(); // Remove o parágrafo de informação ao desmarcar
-                    }
-                });
-                lastClickedElement = null; // Reseta o último item clicado
-            } else {
-                allItems.forEach(item => {
-                    let infoP = item.querySelector('p');
-                    if (infoP) {
-                        infoP.remove(); // Remove as informações dos outros itens
-                    }
-                });
-                
-                // Adiciona o texto ao item clicado
-                if (aboutItens[facilityId]) {
-                    let p = document.createElement('p');
-                    p.innerText = aboutItens[facilityId];
-                    p.style.textAlign = 'center'
-                    parentItem.appendChild(p);
-                }
-                
-                lastClickedElement = parentItem; // Define o último item clicado
-            }
+    phoneInput.addEventListener('input', function(e) {
+        let phone = e.target.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+        if (phone.length > 10) {
+            phone = phone.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+        } else if (phone.length > 6) {
+            phone = phone.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+        } else if (phone.length > 2) {
+            phone = phone.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+        } else {
+            phone = phone.replace(/(\d*)/, '($1');
         }
-    });*/
+        e.target.value = phone;
+    });
+
+    
    
     
 });

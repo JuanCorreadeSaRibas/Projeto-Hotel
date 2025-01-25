@@ -37,13 +37,13 @@
             </div>
         </section>
         <section id="reserve">
-            <div class="rooms">
+            <form class="rooms" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
                 <div class="reserve-title-div">
                     <h2>Quartos & Taxas <i class="fas fa-check-circle"></i></h2>
                 </div>
                     <div>
-                        <label for="amount">Número de pessoas</label>
-                        <select name="amount" id="amount">
+                        <label for="people">Número de pessoas</label>
+                        <select name="people" id="amount">
                             <option value="1" selected>1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -63,8 +63,21 @@
                     <div>
                         <input type="submit" value="Pesquisar">
                     </div>
-                </div> 
-            
+                </div>
+            </form>
+            <div>
+                <?php
+
+                    echo $_POST['people'];
+                    echo '<br>';
+                    echo $_POST['check-in'];
+                    echo '<br>';
+                    echo $_POST['check-out'];
+
+
+
+                ?>
+            </div>
         </section>
         <section class="about" id="sobre">
             <div class="about-item">
@@ -140,7 +153,7 @@
                     <fieldset>
                         <div class="form-item">
                             <label for="nome">Nome</label>
-                            <input type="text" name="nome" id="nome" autocomplete="name"  required>
+                            <input name="nome" id="nome" autocomplete="name"  required>
                         </div>
                         <div class="form-item">
                             <label for="email">Email</label>
@@ -152,7 +165,7 @@
                         </div>               
                         <div class="form-item">
                             <label for="assunto">assunto</label>
-                            <input type="text" id="assunto">
+                            <input id="assunto">
                         </div>
                         <div class="form-item">
                             <label for="textmsg">Digite sua mensagem aqui</label>
