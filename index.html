@@ -7,6 +7,8 @@
     <title>Hotel Paraíso das Águas</title>
     <link rel="shortcut icon" href="src/imagens/logo_favicon_no_bg_circled.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/mobile.css" media="(max-width: 767px)">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -37,7 +39,7 @@
             </div>
         </section>
         <section id="reserve">
-            <form class="rooms" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+            <form class="rooms" method="post">
                 <div class="reserve-title-div">
                     <h2>Quartos & Taxas <i class="fas fa-check-circle"></i></h2>
                 </div>

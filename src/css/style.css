@@ -56,14 +56,13 @@ body {
 
 header {
     width: 100%;
-    background-image: linear-gradient(90deg, #c68863, #db7c7c);
+    padding: 15px;
     position: absolute;
-    background-size: 300% 300%;
+    background-color: rgba(47, 52, 54, 0.8); 
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px); 
     color: #e2e2e2;
-    top: 0;
-    left: 0;
     font-family: var(--mont);
-    box-shadow: 5px 0px 4px rgba(201, 201, 201, 0.865);
     z-index: 1;
     animation: bg-color 5s ease infinite;
 
@@ -538,20 +537,17 @@ footer small a {
 footer small a:hover {
     text-decoration: underline;
 }
-
 /* Media Queries - Tablets */
-@media (min-width: 768px) and (max-width: 1024px){
-    
+@media (min-width: 768px) and (max-width: 1040px) {
     .nav-links {
         display: flex;
         flex-direction: row;
         font-size: 1.2rem;
         opacity: 1;
-        
     }
 
     .menu-icon {
-        display: none; /* Esconder o ícone do menu em tablets */
+        display: none; /* Hide the menu icon on tablets */
     }
 
     .img-g {
@@ -560,13 +556,17 @@ footer small a:hover {
         font-size: 1.2em;
     }
 
+    .about {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .about-item {
         flex-flow: row nowrap;
-        justify-content: space-evenly;
     }
 
     .about-text, .reserve-title-div {
-        font-size: 1.2em;
+        font-size: 1em;
         max-width: 50%;
     }
 
@@ -582,10 +582,10 @@ footer small a:hover {
     }
 
     .rooms select, .rooms input[type="date"], .rooms input[type="submit"] {
-        width: 100%; /* Aumentar a largura dos inputs no tablet */
+        width: 100%; /* Increase the width of inputs on tablets */
     }
 
-    .location-text h2, .facilities h2{
+    .location-text h2, .facilities h2 {
         font-size: 1.5em;
     }
 
@@ -606,153 +606,5 @@ footer small a:hover {
 
     .social-media {
         justify-content: flex-start;
-    }
-}
-
-/* Media Queries - Dispositivos móveis */
-@media (max-width: 767px) {
-
-    .img-g{
-        background-position: top top;
-    }
-
-    nav {
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    .menu-icon {
-        display: flex;
-        font-size: 2em;
-        color: white;
-        text-align: right;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        top: 0;
-        right: -100%; /* Posicionado fora da tela inicialmente */
-        height: 100dvh;
-        background-color: rgba(47, 52, 54, 0.8); /* Cor de fundo com transparência */
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque de fundo */
-        padding: 80px 20px; /* Espaçamento interno */
-        font-size: 1.1em;
-        gap: 30px; /* Espaçamento entre os itens do menu */
-        box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
-        transform: translateX(100%); /* Move o menu para fora da tela à direita */
-
-    }
-    
-    .active{
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        background-color: #2f34365c;
-        top: 100%;
-        right: 0;
-        height: 100dvh;
-        width: 100%;
-        padding: 100px;
-        font-size: 1.1em;
-        gap: 50px;
-        transform: translateX(0);
-
-    }
-
-
-    .nav-links a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-style: normal;
-        transition: color 0.3s ease;
-    }
-    
-    .nav-links a:hover, .nav-links a:focus{
-        font-style: oblique;
-        color: rgb(236, 233, 214); 
-
-    }
-    
-
-    .img-g {
-        align-items: center;
-        height: 400px;
-    }
-
-    .about-item {
-        flex-direction: column;
-    }
-
-    .about-text, .reserve-title-div {
-        font-size: 1em;
-        max-width: 100%;
-    }
-
-    .facil-item {
-        width: 100px; /* Reduzi o tamanho dos itens para melhor ajuste */
-    }
-
-    .facil-item i {
-        font-size: 2.5rem;
-    }
-
-    .facil-item i:hover {
-        font-size: 3rem;
-    }
-
-    .rooms {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .rooms label, .rooms h2 {
-        text-align: center;
-        font-size: 1.5em;
-    }
-
-    .rooms input[type="date"]::-moz-placeholder{
-        content: 'dd/mm/aaaa';
-    }
-
-    .rooms label, .rooms select, .rooms input[type="date"], .rooms input[type="submit"] {
-        flex: auto;
-        width: 300px;
-    }
-
-    .location-text h2 {
-        font-size: 1.5em;
-    }
-
-    .location-text p {
-        font-size: 1em;
-    }
-
-    footer {
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .footer-item{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .footer-contact{
-        text-align: center;
-    }
-
-    .social-media {
-        justify-content: center;
     }
 }
