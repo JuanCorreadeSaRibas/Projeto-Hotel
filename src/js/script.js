@@ -10,9 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
         header.style.position = 'fixed';
     };
 
-    const toggleMenu = () => {
+    const toggleMenu = (e) => {
         navLinks.classList.toggle('active');
         document.body.style.overflowY = navLinks.classList.contains('active') ? 'hidden' : '';
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                navLinks.classList.remove('active');
+                document.body.style.overflowY = '';
+            }
+        }
+        );
     };
 
     const handleResize = () => {
