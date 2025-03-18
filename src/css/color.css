@@ -1,0 +1,24 @@
+/*  Inútil  */
+:root {
+
+    /*Cores*/
+
+    --cor-1: #302520;
+    --cor-2: #6a7791;
+    --cor-3: #514c53;
+    --cor-4: #8f8da0;
+    --cor-5: #c68863;
+    --cor-6: #5e6376;
+    --cor-7: #4a342c;
+    --cor-8: #607b99;
+    --cor-9: #89573f;
+    --cor-10: #2e3b42;
+    --cor-great-black: #1c1c1c;
+
+    --mont : 'Montserrat', sans-serif;
+    --raleway: 'raleway', sans-serif;
+    --lato: 'lato', sans-serif;
+    --pops: 'Poppins', sans-serif;
+    --well: 'Playfair Display', serif;
+    
+}
