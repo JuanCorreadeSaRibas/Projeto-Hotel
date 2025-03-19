@@ -130,7 +130,7 @@ section.location{
 
 .location-text{
   width: 100%;
-  transform: translateY(20%);
+  transform: translateY(25%);
 }
 
 .map{
@@ -160,6 +160,16 @@ footer {
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.footer-logo{
+  padding: 10px;
+}
+
+.footer-logo img{
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 
 .footer-contact {
