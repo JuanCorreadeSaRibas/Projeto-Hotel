@@ -122,15 +122,23 @@ section.location{
   gap: 50px;
   text-align: justify;
   text-justify: distribute-all-lines;
+  font-weight: lighter;
+  flex-flow: column;
 }
 
-.location-text div{
-  display: flex;
-}
 
-.location-text{
+.location-text{ 
+  position: relative;
   width: 100%;
-  transform: translateY(25%);
+}
+
+.location-text h2{
+  font-size: 1.8em;
+}
+
+.location-text p{
+  font-size: 1.3em;
+  min-width: 100%;
 }
 
 .map{
