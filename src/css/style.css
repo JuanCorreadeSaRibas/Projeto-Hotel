@@ -1,18 +1,8 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
-
 @import 'color.css';
 
-@font-face{
-    font-family: 'raleway';
-    src: url('../fontes/Raleway_font/Raleway-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'lato';
-    src: url('../fontes/Lato_font/Lato-Bold.ttf') format('truetype');
-}
+@import 'fonts.css';
 
 * {
     margin: 0;
@@ -261,6 +251,7 @@ section.location{
     font-weight: normal;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .location-text{
@@ -345,13 +336,13 @@ input, input[type="email"], input[type="tel"],input[type="date"],input[type="num
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #0000003b;
     border-radius: 4px;
+    outline: none;
 }
 
 textarea {
     resize: vertical;
-
 }
 
 
@@ -368,15 +359,22 @@ input[type="submit"]{
 }
 
 footer {
-    padding: 30px;
     background-color: var(--cor-great-black);
     color: rgb(193, 194, 195);
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-     
-    position: relative;
+    flex-flow: column;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
 }
 
 
@@ -384,7 +382,8 @@ footer {
 .footer-item {
     display: flex;
     flex-flow: column;
-    align-items: flex-start;
+    justify-items: center;
+    align-items: center;
     margin-bottom: 20px;
     flex: 1;
     min-width: 200px;
@@ -402,7 +401,6 @@ footer {
     margin: 0;
     color: white;
     text-align: center;
-     
 }
 
 .footer-contact ul {
@@ -419,7 +417,6 @@ footer {
 
 .footer-contact ul li {
     margin-bottom: 5px;
-     
 }
 
 .footer-contact ul li i {
@@ -451,7 +448,6 @@ footer {
 
 .social-media li {
     list-style: none;
-     
 }
 
 .social-media a {
@@ -467,26 +463,10 @@ footer {
 
 /* Attribution */
 footer small {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    justify-self: center;
-    align-self: flex-end;
     text-align: center;
-    color: rgb(193, 194, 195);
-     
+    bottom: 0;    
 }
 
-footer small a {
-    color: #a0522d;
-    text-decoration: none;
-     
-}
-
-footer small a:hover {
-    text-decoration: underline;
-     
-}
 /* Media Queries - Tablets */
 @media (min-width: 768px) and (max-width: 1040px) {
     .nav-links {
@@ -544,7 +524,7 @@ footer small a:hover {
     }
 
     footer {
-        flex-direction: row;
+        flex-flow: row wrap;
         justify-content: space-between;
         padding: 20px;
     }
@@ -555,6 +535,6 @@ footer small a:hover {
     }
 
     .social-media {
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
 }
