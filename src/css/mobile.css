@@ -1,4 +1,4 @@
-@import 'colors.css';
+@import 'variables.css';
 
 .img-g {
   background-position: top top;
@@ -76,8 +76,7 @@ nav {
   flex-direction: column;
 }
 
-.about-text,
-.reserve-title-div {
+.about-text{
   font-size: 1em;
   max-width: 100%;
 }
@@ -137,7 +136,8 @@ section.location{
 }
 
 .location-text p{
-  font-size: 1.2em;
+  font-size: 1rem;
+  text-align: left;
   min-width: 100%;
 }
 

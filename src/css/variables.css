@@ -1,8 +1,6 @@
 /*  Inútil  */
 :root {
-
     /*Cores*/
-
     --cor-1: #302520;
     --cor-2: #6a7791;
     --cor-3: #514c53;
@@ -14,11 +12,11 @@
     --cor-9: #89573f;
     --cor-10: #2e3b42;
     --cor-great-black: #1c1c1c;
+    --emphasis: #e48954;
 
     --mont : 'Montserrat', sans-serif;
     --raleway: 'raleway', sans-serif;
     --lato: 'lato', sans-serif;
     --pops: 'Poppins', sans-serif;
     --well: 'Playfair Display', serif;
-    
 }

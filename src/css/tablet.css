@@ -1,0 +1,75 @@
+@import 'variables.css';
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  opacity: 1;
+}
+
+.menu-icon {
+  display: none; /* Hide the menu icon on tablets */
+}
+
+.img-g {
+  align-items: center;
+  height: 500px;
+  font-size: 1.2em;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-item {
+  flex-flow: row;
+}
+
+.rooms {
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.rooms div,
+.rooms label,
+.rooms h2 {
+  text-align: center;
+  font-size: 1.1em;
+  flex: auto;
+}
+
+.rooms select,
+.rooms input[type="date"],
+.rooms input[type="submit"] {
+  width: 100%; /* Increase the width of inputs on tablets */
+}
+
+.location-text h2,
+.facilities h2 {
+  font-size: 1.5em;
+}
+
+.location-text p {
+  font-size: 1.1em;
+}
+
+footer {
+    background-color: var(--cor-great-black);
+    color: rgb(193, 194, 195);
+    display: flex;
+    flex-flow: column;
+}
+
+.footer-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+}
+
