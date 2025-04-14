@@ -157,6 +157,11 @@ iframe{
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+.reserve-title-div h3{
+  font-size: 1rem;
+  padding: 4px;
+  text-align: center;
+}
 
 .footer-container{
   display: flex;
