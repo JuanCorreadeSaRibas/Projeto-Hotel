@@ -42,7 +42,7 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #2f34365c;
+  background-color: #2f3436d7;
   top: 100%;
   right: 0;
   height: 100dvh;
@@ -59,6 +59,7 @@ nav {
   font-weight: bold;
   font-style: normal;
   transition: color 0.3s ease;
+  border-bottom: 1px solid aliceblue;
 }
 
 .nav-links a:hover,
@@ -141,10 +142,9 @@ section.location{
 }
 
 .location-text p{
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: justify;
-  padding: 15px;
-  min-width: 100%;
+  width: 100%;
 }
 
 .map{
@@ -167,6 +167,18 @@ iframe{
   font-size: 1rem;
   padding: 4px;
   text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.reserve-title-div a {
+  color:  rgba(0, 0, 0, 0.836);
+  transition: all 0.5s ease;
+}
+
+.reserve-title-div h3 a:hover {
+  color: var(--emphasis);
+  transition: all 0.5s ease;
 }
 
 .footer-container{
@@ -198,7 +210,11 @@ iframe{
 }
 
 .footer-contact {
-  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }
 
 .social-media {
