@@ -76,8 +76,15 @@ nav {
   flex-direction: column;
 }
 
+.about-item h1{
+  font-size: 2em;
+  width: 100%;
+  margin: 20px 0 20px 0px;
+}
+
 .about-text{
-  font-size: 1em;
+  font-size: 1.1em;
+  line-height: 1.3em;
   max-width: 100%;
 }
 
@@ -118,15 +125,14 @@ nav {
 
 section.location{
   position: relative;
-  gap: 50px;
-  text-align: center;
+  gap: 30px;
+  text-align: justify;
   font-weight: normal;
   flex-flow: column;
 }
 
 
 .location-text{ 
-  position: relative;
   width: 100%;
 }
 
@@ -136,7 +142,8 @@ section.location{
 
 .location-text p{
   font-size: 1rem;
-  text-align: left;
+  text-align: justify;
+  padding: 15px;
   min-width: 100%;
 }
 

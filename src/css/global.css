@@ -160,6 +160,7 @@ section,
 
 .about-text h1,
 .facilities h2 {
+  font-weight: 1.5em;
   color: #2f3436;
 }
 
