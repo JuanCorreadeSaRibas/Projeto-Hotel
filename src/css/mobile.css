@@ -119,9 +119,8 @@ nav {
 section.location{
   position: relative;
   gap: 50px;
-  text-align: justify;
-  text-justify: distribute-all-lines;
-  font-weight: lighter;
+  text-align: center;
+  font-weight: normal;
   flex-flow: column;
 }
 

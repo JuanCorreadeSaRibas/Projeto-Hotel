@@ -23,7 +23,20 @@
 }
 
 .about-item {
+  margin: 0px;
   flex-flow: row;
+}
+
+.about-text{
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.about-img {
+  min-width: 380px;
+  height: auto;
+  padding: 10px;
 }
 
 .rooms {

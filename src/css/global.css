@@ -148,7 +148,7 @@ section,
 
 .about-item {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
@@ -199,7 +199,7 @@ section,
 
 .about-img img {
   width: 100%;
-  max-height: 560px;
+  max-height: 450px;
   object-fit: cover;
   border-radius: 3px;
   box-shadow: 1px 2px 5px rgba(30, 30, 32, 0.288);
@@ -237,12 +237,12 @@ section,
 }
 
 .facil-item i:hover {
-  font-size: 3.5rem;
   cursor: pointer;
   margin-bottom: 10px;
   color: #ef9f70;
   transition: all 0.5s ease;
 }
+
 
 .facil-item h4,
 .facil-item p {
